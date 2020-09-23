@@ -92,6 +92,13 @@ nav {
   color: #30c39e;
 }
 
+header{
+  background-color: rgba(0, 0, 0, 0.726);
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+
 /* Since we'll have the "ul li" "float:left"
  * we need to add a clear after the container. */
 
