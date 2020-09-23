@@ -14,8 +14,8 @@ document.getElementById("submitBtn").addEventListener("click", (event) => {
     `name = ${name} email = ${email} phone = ${phone} message = ${message}`
   );
   if (validate()) {
-    alert("Thank you for submitting form");
     document.getElementById("formSubmit").submit();
+    alert("Thank you for submitting form");
   }
 });
 
@@ -56,7 +56,9 @@ const validate = () => {
     document.getElementById("Phone").style.borderColor = "red";
     console.error("Enter valid phone number");
     return false;
-  } else if (message === "Message content should be at least 10 characters...") {
+  } else if (
+    message === "Message content should be at least 10 characters..."
+  ) {
     console.error("Enter at minimum 5 character!...");
     document.getElementById("Message").style.borderColor = "red";
     return false;
